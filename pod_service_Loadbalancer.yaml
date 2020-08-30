@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: tomcat_service
+  name: tomcat
+spec:
+  selector:
+    name: tomcat
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 8080
