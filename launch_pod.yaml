@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: tomcat
+spec:
+   containers:
+     - name: nginx
+       image: nginx
+       ports:
+        - name: nginx-port
+          containerPort: 8080
